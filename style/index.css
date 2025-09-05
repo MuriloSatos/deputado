@@ -1,0 +1,244 @@
+* {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Arsenal", sans-serif;
+}
+
+.menu {
+    height: 100px;
+    background-color: #112244;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding-right: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+li :hover {
+    color: #FF7B00;
+    border-bottom: 3px solid #FF7B00;
+    padding-bottom: 20px;
+}
+
+.menu img {
+    height: 50%;
+    margin-left: 12%;
+    margin-right: 7%;
+}
+
+#atual {
+    color: #FF7B00;
+}
+
+.imagem {
+    position: relative;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.imagem p {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 2vw;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.botao {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    background: #FF7B00;
+    color: #112244;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #112244;
+    color: #ffffff;
+}
+
+.candidato img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 12%;
+}
+
+.candidato {
+    display: flex;
+}
+
+.infos {
+    margin: 3%;
+    margin-right: 15%;
+}
+
+.infos h3 {
+    color: #FF7B00;
+}
+
+.infos h1 {
+    color: #112244;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.infos p {
+    font-size: 1.5vw;
+    color: #112244;
+    line-height: 1.5;
+}
+
+.trajetoria {
+    display: flex;
+}
+
+.trajetoria h3 {
+    color: #FF7B00;
+}
+
+.faixa_esquerda {
+    width: 45%;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.accordeons {
+    width: 55%;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+details {
+    width: 100%;
+    margin: 3%;
+    border: 2px solid #FF7B00;
+    border-radius: 8px;
+    background-color: #ff7b0035;
+    overflow: hidden;
+}
+
+summary {
+    cursor: pointer;
+    padding: 12px;
+    background-color: #FF7B00;
+    color: #112244;
+    font-weight: bold;
+    border-bottom: 1px solid #FF7B00;
+}
+
+summary:hover {
+    background-color: #112244;
+    color: #ffffff;
+    border-color: #112244;
+}
+
+details[open] summary {
+    border-bottom: 2px solid white;
+}
+
+details p,
+details div {
+    padding: 12px;
+    background-color: #fffaf5;
+    color: #000000;
+}
+
+.menu2 {
+    background-color: #112244;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.p-menu2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #ff8000;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu2 h1 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.menu2 h3 {
+    color: #ffffff;
+    font-weight: 400;
+    max-width: 900px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.menu3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.um {
+    background-color: #fffaf5;
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.um h2 {
+    color: #112244;
+    margin-bottom: 10px;
+}
+
+.um p {
+    color: #333;
+    line-height: 1.4;
+}
+
+.um:hover {
+    background-color: #ffae00;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
