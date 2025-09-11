@@ -141,6 +141,9 @@ li :hover {
     .faixa_esquerda p {
         font-size: 2.5vw;
     }
+    .menu-info{
+    flex-direction: column;
+  }
 
 }
 
