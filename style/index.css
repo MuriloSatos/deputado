@@ -113,6 +113,10 @@ li :hover {
   .infos {
     order: 1;
   }
+
+  .sociais-info{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 425px) {
