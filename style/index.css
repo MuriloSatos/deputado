@@ -95,32 +95,33 @@ li :hover {
 
 .candidato {
     display: flex;
-    
-    
+
+
 }
 
 
- /* mudar ordem de elementos. Dúvida do Miguel eu acho */
+/* mudar ordem de elementos. Dúvida do Miguel eu acho */
 @media (max-width: 768px) {
-  .candidato {
-    flex-direction: column;
-  }
+    .candidato {
+        flex-direction: column;
+    }
 
-  .candidato img {
-    order: 2;
-  }
+    .candidato img {
+        order: 2;
+    }
 
-  .infos {
-    order: 1;
-  }
+    .infos {
+        order: 1;
+    }
 
-  .menu-info{
-    flex-direction: column;
-  }
+    .menu-info {
+        flex-direction: column;
+    }
 
-  .botao{
-    flex-direction: column;
-  }
+    .menu li {
+        font-size: 3.5vw;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -129,8 +130,8 @@ li :hover {
         background-color: yellow;
     }
 
-    .faixa_esquerda{
-        width: 80%; 
+    .faixa_esquerda {
+        width: 80%;
     }
 
     .accordeons {
@@ -145,12 +146,14 @@ li :hover {
     .faixa_esquerda p {
         font-size: 2.5vw;
     }
-    .menu-info{
-    flex-direction: column;
-  }
-  .botao{
-    flex-direction: column;
-  }
+
+    .menu-info {
+        flex-direction: column;
+    }
+
+    .menu li {
+        font-size: 3.5vw;
+    }
 
 }
 
@@ -239,8 +242,8 @@ details div {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 50px ;
-    
+    padding: 50px;
+
 }
 
 .p-menu2 {
@@ -305,7 +308,7 @@ details div {
 .menu-info {
     display: flex;
     background-color: #ffffff;
-    
+
 }
 
 .menu-info div {
@@ -313,14 +316,14 @@ details div {
     margin-right: 1vw;
 }
 
-.info1{
+.info1 {
     margin-top: 40px;
     color: #000000;
     width: 50vw;
 
 }
 
-.vazia{
+.vazia {
     height: 10px;
     width: 100%;
     background-color: #FF7B00;
@@ -328,17 +331,17 @@ details div {
 
 
 
-.div-img img{
+.div-img img {
     margin: 10px;
     width: 40px;
     height: 40px;
 }
 
-.div-img{
+.div-img {
     display: flex;
     justify-content: center;
 }
 
-.sociais-info{
+.sociais-info {
     text-align: center;
 }
