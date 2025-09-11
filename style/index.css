@@ -99,6 +99,47 @@ li :hover {
     
 }
 
+
+ /* mudar ordem de elementos. Dúvida do Miguel eu acho */
+@media (max-width: 768px) {
+  .candidato {
+    flex-direction: column;
+  }
+
+  .candidato img {
+    order: 2;
+  }
+
+  .infos {
+    order: 1;
+  }
+}
+
+@media (max-width: 425px) {
+    .trajetoria {
+        flex-direction: column;
+        background-color: yellow;
+    }
+
+    .faixa_esquerda{
+        width: 80%; 
+    }
+
+    .accordeons {
+        width: 80%;
+        padding-left: 7%;
+    }
+
+    .faixa_esquerda h1 {
+        font-size: 3.5vw;
+    }
+
+    .faixa_esquerda p {
+        font-size: 2.5vw;
+    }
+
+}
+
 .infos {
     margin: 3%;
     margin-right: 15%;
