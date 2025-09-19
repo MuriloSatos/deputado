@@ -154,3 +154,74 @@ li:hover a {
     width: 550px;
     height: 366px;
 }
+
+
+@media (max-width: 425px) {
+
+    .hamburger {
+        display: block;
+        /* mostra o botão */
+    }
+
+.menu{
+        position: relative;
+        z-index: 1000;
+    }
+
+    .menu ul {
+        background-color: #112244;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        padding: auto;
+        z-index: 999;
+        
+    }
+
+    #menu-toggle:checked+.hamburger+ul {
+        display: flex;
+    }
+
+
+    
+    .menu a {
+        font-size: 3.5vw;
+        text-decoration: none;
+        
+    }
+
+    li :hover {
+    padding-bottom: 8px;
+}
+
+
+    .menu li {
+        padding-right: 10%;
+        padding-bottom: 30px;
+        text-align: center;
+        
+    }
+
+    .img1 img{  
+        width: 100%;
+
+    }
+    
+    .se2{
+        flex-direction: column;
+    }
+
+    .se1{
+        flex-direction: column;
+    }
+
+    .div1 figure, .div2 figure{
+        width: 350px;
+    }
+
+
+
+}
