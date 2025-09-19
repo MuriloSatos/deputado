@@ -75,27 +75,63 @@ li:hover a {
 
 .div1  {
     width: 65%;
-    align-items: center;
-    
+    text-align: center;
+    color: #FF7B00;
 }
 
 .div1 img{
     width: 80%;
     max-height: 550px;
-    margin-left: 10%;
-
-
 }
 
+.div1 figcaption{
+    color: #666564;
+    font-size: 13px;
+}
 .div2 img {
     width: 80%;
     max-height: 550px;
-    margin-left: 10%;
+    
 }
 
 .div2 {
     width: 35%;
-    align-items: center;
-
+    text-align: center;
+    color: #FF7B00;
 }
 
+
+.div2 figcaption{
+    color: #666564;
+    font-size: 13px;
+}
+
+.se2{
+    display: flex;
+    
+}
+
+.div3{
+    width: 33.33%;
+    background-color: #FF7B00;
+}
+
+.div4{
+    width: 33.33%;
+    background-color: #132853;
+}
+
+.div5{
+    width: 33.33%;
+    background-color: aqua;
+}
+
+.img3{
+    width: 500px;
+}
+.img4{
+    width: 500px;
+}
+.img5{
+    width: 500px;
+}
