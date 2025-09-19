@@ -111,27 +111,46 @@ li:hover a {
     
 }
 
+.div3 figcaption{
+    color: #666564;
+    font-size: 14px;
+}
+.div4 figcaption{
+    color: #666564;
+    font-size: 14px;
+}
+.div5 figcaption{
+    color: #666564;
+    font-size: 14px;
+}
+
 .div3{
     width: 33.33%;
-    background-color: #FF7B00;
+    text-align: center;
+    color: #FF7B00;
 }
+
 
 .div4{
     width: 33.33%;
-    background-color: #132853;
+    text-align: center;
+    color: #FF7B00;
 }
 
 .div5{
     width: 33.33%;
-    background-color: aqua;
+    text-align: center;
+    color: #FF7B00;
 }
 
 .img3{
-    width: 500px;
+    width: 550px;
 }
 .img4{
-    width: 500px;
+    width: 550px;
+    height: 366px;
 }
 .img5{
-    width: 500px;
+    width: 550px;
+    height: 366px;
 }
