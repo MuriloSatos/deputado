@@ -49,3 +49,59 @@ li :hover {
     border-bottom: 3px solid #FF7B00;
     padding-bottom: 20px;
 }
+
+
+
+li :hover {
+    color: #FF7B00;
+    border-bottom: 3px solid #FF7B00;
+    padding-bottom: 20px;
+}
+
+.menu img {
+    height: 50%;
+    margin-left: 12%;
+    margin-right: 7%;
+}
+
+.video{
+    display: flex;
+}
+
+.video{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    gap: 50px;
+}
+
+.div-video{
+    width: 50%;
+    height: 400px;
+    
+}
+
+.div-video iframe {
+  width: 800px;
+  height: 570px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+#video1,
+#video2{
+    width: 100%;
+}
+
+.div-video2{
+    width: 50%;
+    height: 400px;
+}
+
+
+.div-video2 iframe {
+  width: 700px;
+  height: 570px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
