@@ -1,10 +1,7 @@
 * {
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 0;
+    margin: 0;
+    padding: 0;
 }
-
 
 #menu-toggle {
     display: none;
@@ -35,8 +32,6 @@
 ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 li {
@@ -68,19 +63,18 @@ li:hover a {
     position: relative;
     display: inline-block;
     text-align: center;
-    /* centraliza o figcaption */
 }
 
 .noticia1 figcaption {
     margin-top: 10px;
-    /* espaço entre a imagem e o texto */
     font-size: 18px;
     font-weight: bold;
-    color: #FF7B00
+    color: #FF7B00;
 }
 
 .se1 {
     display: flex;
+    margin-top: 25px;
 }
 
 .div1 {
@@ -94,15 +88,10 @@ li:hover a {
     max-height: 550px;
 }
 
-.div1 figcaption {
+.div1 figcaption,
+.div2 figcaption {
     color: #666564;
     font-size: 13px;
-}
-
-.div2 img {
-    width: 80%;
-    max-height: 550px;
-
 }
 
 .div2 {
@@ -111,71 +100,64 @@ li:hover a {
     color: #FF7B00;
 }
 
-
-.div2 figcaption {
-    color: #666564;
-    font-size: 13px;
+.div2 img {
+    width: 80%;
+    max-height: 550px;
 }
 
 .se2 {
     display: flex;
-
-}
-
-.div3 figcaption {
-    color: #666564;
-    font-size: 14px;
-}
-
-.div4 figcaption {
-    color: #666564;
-    font-size: 14px;
-}
-
-.div5 figcaption {
-    color: #666564;
-    font-size: 14px;
-}
-
-.div3 {
-    width: 33.33%;
-    text-align: center;
-    color: #FF7B00;
 }
 
 
-.div4 {
-    width: 33.33%;
-    text-align: center;
-    color: #FF7B00;
+.se2 {
+    gap: 15px;
+    margin-top: 25px; 
 }
 
+.se2 .div3,
+.se2 .div4,
+.se2 .div5 {
+    border: 3px; 
+    padding: 5px;
+}
+
+.div3,
+.div4,
 .div5 {
     width: 33.33%;
     text-align: center;
     color: #FF7B00;
 }
 
+.div3 figcaption,
+.div4 figcaption,
+.div5 figcaption {
+    color: #666564;
+    font-size: 14px;
+}
+
+.div3 img,
+.div4 img,
+.div5 img {
+    width: 100%;
+    max-height: 350px;
+}
+
 .img3 {
     width: 550px;
 }
 
-.img4 {
-    width: 550px;
-    height: 366px;
-}
-
+.img4,
 .img5 {
     width: 550px;
     height: 366px;
 }
 
-
 @media (max-width: 425px) {
 
     .hamburger {
         display: block;
-        /* mostra o botão */
     }
 
     .menu {
@@ -191,46 +173,31 @@ li:hover a {
         top: 75px;
         right: 0;
         width: 100%;
-        padding: auto;
         z-index: 999;
-
     }
 
     #menu-toggle:checked+.hamburger+ul {
         display: flex;
     }
 
-
-
     .menu a {
         font-size: 3.5vw;
-        text-decoration: none;
-
     }
-
-    li :hover {
-        padding-bottom: 8px;
-    }
-
 
     .menu li {
         padding-right: 10%;
         padding-bottom: 30px;
         text-align: center;
-
-    }
+        font-size: 3.5vw;
+     }
 
     .img1 img {
         width: 100%;
-
     }
-
-
 
     .se1 {
         flex-direction: column;
         width: 100%;
-
     }
 
     .div1 figure,
@@ -244,24 +211,93 @@ li:hover a {
         width: 100%;
     }
 
-    
-
     .se2 {
         flex-direction: column;
         width: 100%;
     }
 
+    .div3 img,
+    .div4 img,
+    .div5 img{
+        text-align: center;
+        width: 100%;
+        max-height: 150px;
+        font-size: 2.8vw;
+    }
+
+    .se2 img {
+        width: 100%;
+        height: auto;         
+        object-fit: contain;   
+        display: block;
+    }
+}
+
+
+@media (max-width: 765px) {
+
+    .menu a {
+        font-size: 2.5vw;
+    }
+
+    .se1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div1,
+    .div2 {
+        flex: 1;
+        padding: 5px;
+    }
+
+    .div1 img,
+    .div2 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .div1 {
+        border-left: 4px;
+    }
+
+    .div2 {
+        border-left: 4px ;
+        border-right: 4px;
+    }
+
+    .se2 {
+        display: flex;
+        flex-direction: row;
+    }
+
     .div3,
     .div4,
     .div5 {
-
-        text-align: center;
-        width: 100%;
-        font-size: 3vw;
+        flex: 1;
+        padding: 5px;
     }
 
-    .se2 img{
+    .div3 img,
+    .div4 img,
+    .div5 img {
         width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
     }
 
+    .div3 {
+        border-left: 4px;
+    }
+
+    .div4 {
+        border-left: 4px;
+    }
+
+    .div5 {
+        border-left: 4px;
+        border-right: 4px;
+    }
 }
