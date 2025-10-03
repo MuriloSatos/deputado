@@ -1,7 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Arsenal", sans-serif;
 }
+
+a {
+    color: black;         /* deixa o texto preto */
+    text-decoration: none; /* remove o sublinhado */
+}
+
 
 #menu-toggle {
     display: none;
@@ -16,35 +25,16 @@
     margin-left: auto;
 }
 
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.link-title {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: block;
-}
-
-
 .menu {
-    height: 100px;
-    background-color: #132853;
+    height: 75px;
+    background-color: #112244;
     display: flex;
     align-items: center;
 }
 
 .menu a {
     color: #ffffff;
-    font-size: 1.4vw;
-    text-decoration: none;
+    font-size: 1.2vw;
 }
 
 ul {
@@ -56,10 +46,10 @@ li {
     padding-right: 25%;
 }
 
-li:hover a {
+li :hover {
     color: #FF7B00;
-    border-bottom: 3px solid #FF7B00;
-    padding-bottom: 5px;
+    border-bottom: 2px solid #FF7B00;
+    padding-bottom: 8px;
 }
 
 .menu img {
@@ -95,10 +85,20 @@ li:hover a {
     margin-top: 25px;
 }
 
+/* textos pretos nas divs */
+.div1, .div2, .div3, .div4, .div5 {
+    color: #000000;
+}
+
+.div1 h3, .div2 h3, .div3 h3, .div4 h3, .div5 h3,
+.div1 figcaption, .div2 figcaption, .div3 figcaption, .div4 figcaption, .div5 figcaption {
+    color: #272626;
+}
+
 .div1 {
-    width: 65%;
+    width: 100%;
     text-align: center;
-    color: #FF7B00;
+    padding: 0px;
 }
 
 .div1 img {
@@ -108,14 +108,12 @@ li:hover a {
 
 .div1 figcaption,
 .div2 figcaption {
-    color: #666564;
     font-size: 13px;
 }
 
 .div2 {
     width: 80%;
     text-align: center;
-    color: #FF7B00;
 }
 
 .div2 img {
@@ -125,41 +123,28 @@ li:hover a {
 
 .se2 {
     display: flex;
-}
-
-
-.se2 {
     gap: 15px;
     margin-top: 25px;
 }
 
+/* mesmo tamanho div3, div4, div5 */
 .se2 .div3,
 .se2 .div4,
 .se2 .div5 {
-    border: 3px;
-    padding: 5px;
-}
-
-.div3,
-.div4,
-.div5 {
-    width: 33.33%;
+    flex: 1;
     text-align: center;
-    color: #FF7B00;
-}
-
-.div3 figcaption,
-.div4 figcaption,
-.div5 figcaption {
-    color: #666564;
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .div3 img,
 .div4 img,
 .div5 img {
     width: 100%;
-    max-height: 350px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .img3 {
@@ -172,17 +157,14 @@ li:hover a {
     height: 366px;
 }
 
-
 .line {
     height: 20px;
     background-color: #FF7B00;
     margin-top: 50px;
 }
 
-
 .footer_social {
     text-align: center;
-    margin-bottom: 2%;
     background-color: #112244;
 }
 
@@ -207,7 +189,6 @@ li:hover a {
     color: #000000;
     font-size: 1.1vw;
 }
-
 
 @media (max-width: 425px) {
 
@@ -234,7 +215,6 @@ li:hover a {
     #menu-toggle:checked+.hamburger+ul {
         display: flex;
     }
-
 
     .menu li {
         padding-right: 10%;
@@ -293,9 +273,7 @@ li:hover a {
         height: 25px;
         width: 25px;
     }
-
 }
-
 
 @media (max-width: 765px) {
 
@@ -321,15 +299,7 @@ li:hover a {
         display: block;
     }
 
-    .div1 {
-        border-left: 4px;
-    }
-
-    .div2 {
-        border-left: 4px;
-        border-right: 4px;
-    }
-
+    /* Removidos os border-left e border-right */
     .se2 {
         display: flex;
         flex-direction: row;
@@ -351,19 +321,7 @@ li:hover a {
         display: block;
     }
 
-    .div3 {
-        border-left: 4px;
-    }
-
-    .div4 {
-        border-left: 4px;
-    }
-
-    .div5 {
-        border-left: 4px;
-        border-right: 4px;
-    }
-
+    /* Nenhum border aqui */
     .footer_redes_sociais img {
         height: 25px;
         width: 25px;
@@ -373,3 +331,4 @@ li:hover a {
         font-size: 2.6vw;
     }
 }
+    

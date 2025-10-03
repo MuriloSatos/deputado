@@ -50,14 +50,6 @@ li :hover {
     padding-bottom: 20px;
 }
 
-
-
-li :hover {
-    color: #FF7B00;
-    border-bottom: 3px solid #FF7B00;
-    padding-bottom: 20px;
-}
-
 .menu img {
     height: 50%;
     margin-left: 12%;
